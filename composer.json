@@ -1,0 +1,13 @@
+{
+    "name": "spia/agent-visy",
+    "authors": [
+        {
+            "name": "Kaarle Hovila",
+            "email": "kaarle.hovila@unikie.com"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpunit/phpunit": "^7"
+    }
+}

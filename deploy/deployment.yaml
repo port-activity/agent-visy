@@ -1,0 +1,61 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: agent-visy
+spec:
+  selector:
+    app: agent-visy
+  type: NodePort
+  ports:
+    - protocol: TCP
+      name: visy-agent
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agent-visy
+  labels:
+    app: agent-visy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: agent-visy
+  template:
+    metadata:
+      labels:
+        app: agent-visy
+    spec:
+      imagePullSecrets:
+      - name: pipeline-docker-registry
+      containers:
+      - name: agent-visy
+        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}-${CICD_GIT_COMMIT}
+        volumeMounts:
+        - name: htpasswd
+          mountPath: "/usr/local/etc/"
+          readOnly: true
+        env:
+          - name: API_URL
+            valueFrom:
+              secretKeyRef:
+                name: agent-visy
+                key: API_URL
+          - name: API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: agent-visy
+                key: API_KEY
+          - name: AINO_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: agent-visy
+                key: AINO_API_KEY
+        ports:
+        - containerPort: 80
+      volumes:
+      - name: htpasswd
+        secret:
+          secretName: agent-visy-htpasswd-file

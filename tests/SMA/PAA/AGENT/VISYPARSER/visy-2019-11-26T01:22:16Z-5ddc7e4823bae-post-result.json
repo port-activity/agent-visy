@@ -1,0 +1,82 @@
+[
+    {
+        "eventnumber": "1",
+        "permitid": "1",
+        "permitreason": "2",
+        "trailerdetected": "1",
+        "checkpoint": {
+            "id": "3",
+            "name": "Sis\u00e4\u00e4ntulo, tavaraliikenne",
+            "tag": "TAV_SIS",
+            "site": "RAUMA",
+            "type": "VEHICLEGATE",
+            "direction": "IN",
+            "messagedirection": "IN",
+            "policy": "OPENFORPERMIT",
+            "sourceareaid": "1",
+            "targetareaid": "2",
+            "checkgos": "1",
+            "checkportvisit": "1",
+            "checklogistics": "1",
+            "checkpermitcheckpoint": "1",
+            "checkpersoncard": "1",
+            "checkvehiclecard": "1",
+            "checkemptycontainers": "1"
+        },
+        "date": {
+            "year": "2019",
+            "month": "11",
+            "day": "26",
+            "hour": "3",
+            "minute": "18",
+            "second": "6"
+        },
+        "frontlicenseplates": {
+            "licenseplate": {
+                "unformatted": "ABC125",
+                "formatted": "ABC125",
+                "nationality": "FIN",
+                "confidence": "1"
+            }
+        },
+        "rearlicenseplates": {
+            "licenseplate": {
+                "unformatted": "987",
+                "formatted": "987",
+                "nationality": "LVA",
+                "confidence": "0.99"
+            }
+        },
+        "cameras": {
+            "camera": [
+                {
+                    "name": "Front camera",
+                    "singlefield": "1",
+                    "cameraid": "1",
+                    "thumbcameraid": "2"
+                },
+                {
+                    "name": "Front camera thumb",
+                    "singlefield": "1",
+                    "thumbnail": "1",
+                    "cameraid": "2",
+                    "thumbcameraid": "2"
+                },
+                {
+                    "name": "Front view",
+                    "singlefield": "1",
+                    "cameraid": "3",
+                    "thumbcameraid": "4"
+                },
+                {
+                    "name": "Front view thumb",
+                    "singlefield": "1",
+                    "thumbnail": "1",
+                    "cameraid": "4",
+                    "thumbcameraid": "4"
+                }
+            ]
+        },
+        "ovt": "XMLGATE"
+    }
+]

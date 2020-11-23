@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+   <eventnumber>1</eventnumber>
+   <permitid>1</permitid>
+   <permitreason>2</permitreason>
+   <trailerdetected>1</trailerdetected>
+   <checkpoint>
+      <id>3</id>
+      <name>Sisääntulo, tavaraliikenne</name>
+      <tag>TAV_SIS</tag>
+      <site>RAUMA</site>
+      <type>VEHICLEGATE</type>
+      <direction>IN</direction>
+      <messagedirection>IN</messagedirection>
+      <policy>OPENFORPERMIT</policy>
+      <sourceareaid>1</sourceareaid>
+      <targetareaid>2</targetareaid>
+      <checkgos>1</checkgos>
+      <checkportvisit>1</checkportvisit>
+      <checklogistics>1</checklogistics>
+      <checkpermitcheckpoint>1</checkpermitcheckpoint>
+      <checkpersoncard>1</checkpersoncard>
+      <checkvehiclecard>1</checkvehiclecard>
+      <checkemptycontainers>1</checkemptycontainers>
+   </checkpoint>
+   <date>
+      <year>2019</year>
+      <month>11</month>
+      <day>26</day>
+      <hour>3</hour>
+      <minute>18</minute>
+      <second>6</second>
+   </date>
+   <frontlicenseplates>
+      <licenseplate>
+         <unformatted>ABC125</unformatted>
+         <formatted>ABC125</formatted>
+         <nationality>FIN</nationality>
+         <confidence>1</confidence>
+      </licenseplate>
+   </frontlicenseplates>
+   <rearlicenseplates>
+      <licenseplate>
+         <unformatted>987</unformatted>
+         <formatted>987</formatted>
+         <nationality>LVA</nationality>
+         <confidence>0.99</confidence>
+      </licenseplate>
+   </rearlicenseplates>
+   <cameras>
+      <camera>
+         <name>Front camera</name>
+         <singlefield>1</singlefield>
+         <cameraid>1</cameraid>
+         <thumbcameraid>2</thumbcameraid>
+      </camera>
+      <camera>
+         <name>Front camera thumb</name>
+         <singlefield>1</singlefield>
+         <thumbnail>1</thumbnail>
+         <cameraid>2</cameraid>
+         <thumbcameraid>2</thumbcameraid>
+      </camera>
+      <camera>
+         <name>Front view</name>
+         <singlefield>1</singlefield>
+         <cameraid>3</cameraid>
+         <thumbcameraid>4</thumbcameraid>
+      </camera>
+      <camera>
+         <name>Front view thumb</name>
+         <singlefield>1</singlefield>
+         <thumbnail>1</thumbnail>
+         <cameraid>4</cameraid>
+         <thumbcameraid>4</thumbcameraid>
+      </camera>
+   </cameras>
+   <ovt>XMLGATE</ovt>
+</event>
